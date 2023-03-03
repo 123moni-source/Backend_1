@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addnew</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .b{
+            background-color: rgba(0, 0, 255, 0.753);
+        }
+        .s{
+            background-color: silver;
+        }
+        .bton{
+            border: none;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 20px;
+            border-radius: 1px;
+            color: rgba(255, 255, 255, 0.863);
+            /* border: none;
+            text-decoration: none;
+            cursor: pointer; */
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 500px;
+            height: 600px;
+        }
+        /* body{
+            display: flex;
+            justify-content: center;
+        } */
+    </style>
+</head>
+<body>
+    <main>
+
+        <form action="./articles" method="post">
+
+            <h1>Add new Articles</h1>
+
+            <label for="title">Title</label>
+            <br>
+            <input type="text" name="title" id="title">
+            <br>
+            <label for="description">DESCRIPTION</label>
+            <br>
+
+            <textarea name="description" id="description" cols="100" rows="10" ></textarea>
+            <br>
+            <label for="content">MARKDOWN
+
+            </label><br>
+            <textarea name="content" id="content" cols="100" rows="10"></textarea><br>
+
+            <a href="./" class="bton s">CANCEl
+
+            </a>
+
+            <button class="bton b">SAVE</button>
+
+        </form>
+    </main>
+    
+</body>
+</html>
