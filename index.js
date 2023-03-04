@@ -53,11 +53,11 @@ const path=require('path');
 
 const methodOverride=require('method-override');
 
-const articles=require('./models/Article');
+const articles=require('./models/main_article');
 
 const mongoose=require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/Articles').then(()=>console.log("DB connected"));
+mongoose.connect('mongodb://127.0.0.1:5000/Articles').then(()=>console.log("DB connected"));
 
 
 
@@ -83,7 +83,7 @@ app.get('/',async(req,res)=>{
 
 app.get('/articles/new',(req,res)=>{
 
-    res.render('addArticle');
+    res.render('add');
 
 });
 

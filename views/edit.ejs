@@ -7,40 +7,43 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-
 <title>Add New Article</title>
 
     <style>
         *{
             font-family: Arial, Helvetica, sans-serif;
         }
-        /* .b{
-            background-color: blue;
-        }
-        .s{
-            background-color: silver;
-        } */
-        .bton{
+        
+        .bton
+        {
+
             padding: 10px;
+
             border-radius: 3px;
+
             color: white;
             border: none;
+
             text-decoration: none;
+
             cursor: pointer;
         }
         main{
+
             /* display: flex;
             justify-content: center; */
             align-items: flex-start;
+
             width: 600px;
+
             height: 700px;
             display: flex;
             justify-content: center;
         }
-        .b{
+        .sb2{
             background-color: blue;
         }
-        .s{
+        .sb1{
             background-color: silver;
         }
 
@@ -52,28 +55,36 @@
 </head>
 <body>
     <main>
+
         <form action="/articles/<%=article.id%>?_method=put" method="post">
 
             <h1>Edit Article</h1>
 
             <label for="title">Title</label><br>
 
-            <input type="text" name="title" id="title" value="<%=article.title%>"><br>
+            <input type="text" name="title" id="title" 
+            value="<%=article.title%>"><br>
 
             <label for="description">Description
 
             </label>
+ 
             <br>
             <textarea name="description" id="description" cols="100" rows="10" >
+
                 <%=article.description%></textarea><br>
+
             <label for="content">Markdown</label>
             <br>
             <textarea name="content" id="content" cols="100" rows="10" >
+
                 <%=article.content%></textarea><br>
-            <a href="/" class="bton s">Cancel</a> 
+                
+            <a href="/" class="bton sb1">Cancel</a> 
             
-            <button class="bton b">Save</button>
-        </form>
+            <button class="bton sb2">Save</button>
+            </form>
+
     </main>
     
 </body>
